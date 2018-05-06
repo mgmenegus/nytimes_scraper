@@ -8,8 +8,8 @@
     "build": "webpack -w",
     "startLocal": "npm run build && node server.js"
   },
-  "author": "A. James McHale",
-  "license": "ISC",
+  "author": "Matthew Menegus",
+  "license": "",
   "dependencies": {
     "axios": "^0.16.1",
     "body-parser": "^1.17.1",
