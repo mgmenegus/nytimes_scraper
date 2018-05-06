@@ -16,7 +16,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("./public"));
 
 //mongoose.connect("mongodb://localhost/nytimes");
-mongoose.connect("mongodb://heroku_n651tjl9:eet3hd33n589f6mhlq46424mba@ds143221.mlab.com:43221/heroku_n651tjl9");
+//mongoose.connect("mongodb://heroku_n651tjl9:eet3hd33n589f6mhlq46424mba@ds143221.mlab.com:43221/heroku_n651tjl9");
+//${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_SERVER}
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytimes";
 var db = mongoose.connection;
 
 db.on("error", function(err) {
