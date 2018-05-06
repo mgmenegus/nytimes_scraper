@@ -1,0 +1,33 @@
+{
+  "name": "NYT-React",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w",
+    "startLocal": "npm run build && node server.js"
+  },
+  "author": "A. James McHale",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.9.4",
+    "mongoose-unique-validator": "^1.0.5",
+    "morgan": "^1.8.1",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "react-router": "^2.4.1",
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.13.1"    
+  },
+  "devDependencies": {
+
+  }
+}
